@@ -1,0 +1,15 @@
+0 8300000 xx^xx-sil+o=o/A:xx+xx+xx/B:xx-xx_xx/C:xx_xx+xx/D:06+xx_xx/E:xx_xx!xx_xx-xx/F:xx_xx#xx_xx@xx_xx|xx_xx/G:4_1%0_xx-xx/H:xx_xx/I:xx-xx@xx+xx&xx-xx|xx+xx/J:1_4/K:2+2-8
+8300000 9100000 xx^sil-o+o=k/A:0+1+4/B:xx-xx_xx/C:06_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:4_1#0_xx@1_1|1_4/G:4_4%0_xx-0/H:xx_xx/I:1-4@1+2&1-2|1+8/J:1_4/K:2+2-8
+9100000 9400000 sil^o-o+k=i/A:1+2+3/B:xx-xx_xx/C:06_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:4_1#0_xx@1_1|1_4/G:4_4%0_xx-0/H:xx_xx/I:1-4@1+2&1-2|1+8/J:1_4/K:2+2-8
+9400000 11500000 o^o-k+i=n/A:2+3+2/B:xx-xx_xx/C:06_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:4_1#0_xx@1_1|1_4/G:4_4%0_xx-0/H:xx_xx/I:1-4@1+2&1-2|1+8/J:1_4/K:2+2-8
+11500000 12400000 o^k-i+n=i/A:2+3+2/B:xx-xx_xx/C:06_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:4_1#0_xx@1_1|1_4/G:4_4%0_xx-0/H:xx_xx/I:1-4@1+2&1-2|1+8/J:1_4/K:2+2-8
+12400000 13300000 k^i-n+i=pau/A:3+4+1/B:xx-xx_xx/C:06_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:4_1#0_xx@1_1|1_4/G:4_4%0_xx-0/H:xx_xx/I:1-4@1+2&1-2|1+8/J:1_4/K:2+2-8
+13300000 14300000 i^n-i+pau=o/A:3+4+1/B:xx-xx_xx/C:06_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:4_1#0_xx@1_1|1_4/G:4_4%0_xx-0/H:xx_xx/I:1-4@1+2&1-2|1+8/J:1_4/K:2+2-8
+14300000 15200000 n^i-pau+o=t/A:xx+xx+xx/B:06-xx_xx/C:xx_xx+xx/D:02+xx_xx/E:4_1!0_xx-xx/F:xx_xx#xx_xx@xx_xx|xx_xx/G:4_4%0_xx-xx/H:1_4/I:xx-xx@xx+xx&xx-xx|xx+xx/J:1_4/K:2+2-8
+15200000 16000000 i^pau-o+t=o/A:-3+1+4/B:06-xx_xx/C:02_xx+xx/D:xx+xx_xx/E:4_1!0_xx-0/F:4_4#0_xx@1_1|1_4/G:xx_xx%xx_xx-xx/H:1_4/I:1-4@2+1&2-1|5+4/J:xx_xx/K:2+2-8
+16000000 16800000 pau^o-t+o=o/A:-2+2+3/B:06-xx_xx/C:02_xx+xx/D:xx+xx_xx/E:4_1!0_xx-0/F:4_4#0_xx@1_1|1_4/G:xx_xx%xx_xx-xx/H:1_4/I:1-4@2+1&2-1|5+4/J:xx_xx/K:2+2-8
+16800000 17800000 o^t-o+o=t/A:-2+2+3/B:06-xx_xx/C:02_xx+xx/D:xx+xx_xx/E:4_1!0_xx-0/F:4_4#0_xx@1_1|1_4/G:xx_xx%xx_xx-xx/H:1_4/I:1-4@2+1&2-1|5+4/J:xx_xx/K:2+2-8
+17800000 18700000 t^o-o+t=o/A:-1+3+2/B:06-xx_xx/C:02_xx+xx/D:xx+xx_xx/E:4_1!0_xx-0/F:4_4#0_xx@1_1|1_4/G:xx_xx%xx_xx-xx/H:1_4/I:1-4@2+1&2-1|5+4/J:xx_xx/K:2+2-8
+18700000 19500000 o^o-t+o=sil/A:0+4+1/B:06-xx_xx/C:02_xx+xx/D:xx+xx_xx/E:4_1!0_xx-0/F:4_4#0_xx@1_1|1_4/G:xx_xx%xx_xx-xx/H:1_4/I:1-4@2+1&2-1|5+4/J:xx_xx/K:2+2-8
+19500000 20000000 o^t-o+sil=xx/A:0+4+1/B:06-xx_xx/C:02_xx+xx/D:xx+xx_xx/E:4_1!0_xx-0/F:4_4#0_xx@1_1|1_4/G:xx_xx%xx_xx-xx/H:1_4/I:1-4@2+1&2-1|5+4/J:xx_xx/K:2+2-8
+20000000 20500000 t^o-sil+xx=xx/A:xx+xx+xx/B:02-xx_xx/C:xx_xx+xx/D:xx+xx_xx/E:4_4!0_xx-xx/F:xx_xx#xx_xx@xx_xx|xx_xx/G:xx_xx%xx_xx-xx/H:1_4/I:xx-xx@xx+xx&xx-xx|xx+xx/J:xx_xx/K:2+2-8

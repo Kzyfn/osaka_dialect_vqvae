@@ -1,0 +1,14 @@
+0 300000 xx^xx-sil+k=I/A:xx+xx+xx/B:xx-xx_xx/C:xx_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:xx_xx#xx_xx@xx_xx|xx_xx/G:7_6%0_xx-xx/H:xx_xx/I:xx-xx@xx+xx&xx-xx|xx+xx/J:1_7/K:1+1-7
+300000 10800000 xx^sil-k+I=ts/A:-5+1+7/B:xx-xx_xx/C:02_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+10800000 12000000 sil^k-I+ts=u/A:-5+1+7/B:xx-xx_xx/C:02_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+12000000 12700000 k^I-ts+u=n/A:-4+2+6/B:xx-xx_xx/C:02_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+12700000 13000000 I^ts-u+n=e/A:-4+2+6/B:xx-xx_xx/C:02_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+13000000 14000000 ts^u-n+e=ch/A:-3+3+5/B:xx-xx_xx/C:02_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+14000000 14900000 u^n-e+ch=o/A:-3+3+5/B:xx-xx_xx/C:02_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+14900000 16000000 n^e-ch+o=o/A:-2+4+4/B:02-xx_xx/C:03_xx+xx/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+16000000 16600000 e^ch-o+o=d/A:-2+4+4/B:02-xx_xx/C:03_xx+xx/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+16600000 18300000 ch^o-o+d=a/A:-1+5+3/B:02-xx_xx/C:03_xx+xx/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+18300000 19600000 o^o-d+a=i/A:0+6+2/B:02-xx_xx/C:03_xx+xx/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+19600000 20600000 o^d-a+i=sil/A:0+6+2/B:02-xx_xx/C:03_xx+xx/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+20600000 21600000 d^a-i+sil=xx/A:1+7+1/B:02-xx_xx/C:03_xx+xx/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+21600000 22500000 a^i-sil+xx=xx/A:xx+xx+xx/B:03-xx_xx/C:xx_xx+xx/D:xx+xx_xx/E:7_6!0_xx-xx/F:xx_xx#xx_xx@xx_xx|xx_xx/G:xx_xx%xx_xx-xx/H:1_7/I:xx-xx@xx+xx&xx-xx|xx+xx/J:xx_xx/K:1+1-7

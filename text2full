@@ -1,0 +1,13 @@
+#!/bin/bash
+ 
+if [ ! -e lab ]; then
+    mkdir lab
+fi
+
+lab=$(basename $1 | sed -e 's/txt/lab/')
+ojtlab=$(basename $1 | sed -e 's/txt/ojtlab/')
+
+/usr/local/bin/open_jtalk -x  /usr/local/share/open_jtalk_dic_utf_8-1.07/ -m /usr/local/share/hts_voice_nitech_jp_atr503_m001-1.05/nitech_jp_atr503_m001.htsvoice -ot ./lab/$ojtlab $1
+sed -n -e "/\[Output label\]/,/\[Global parameter\]/p" ./lab/$ojtlab | sed '/^$/d' | sed '/^\[/d' > ./lab/$lab
+
+echo $lab

@@ -1,0 +1,6 @@
+perl segment_julius_with_monophone.pl base.scp wav lab/ out
+
+   base.scp ... filelist of basename
+   wav ... dir to find wav file
+   lab ... dir to find monophone file
+   out ... dir to save aligned file

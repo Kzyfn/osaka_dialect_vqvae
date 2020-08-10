@@ -1,0 +1,13 @@
+0 300000 xx^xx-sil+sh=i/A:xx+xx+xx/B:xx-xx_xx/C:xx_xx+xx/D:18+xx_xx/E:xx_xx!xx_xx-xx/F:xx_xx#xx_xx@xx_xx|xx_xx/G:7_3%0_xx-xx/H:xx_xx/I:xx-xx@xx+xx&xx-xx|xx+xx/J:3_20/K:2+7-34
+300000 600000 xx^sil-sh+i=N/A:-2+1+7/B:xx-xx_xx/C:18_xx+xx/D:23+xx_xx/E:xx_xx!xx_xx-xx/F:7_3#0_xx@1_3|1_20/G:7_4%0_xx-1/H:xx_xx/I:3-20@1+2&1-7|1+34/J:4_14/K:2+7-34
+600000 7300000 sil^sh-i+N=s/A:-2+1+7/B:xx-xx_xx/C:18_xx+xx/D:23+xx_xx/E:xx_xx!xx_xx-xx/F:7_3#0_xx@1_3|1_20/G:7_4%0_xx-1/H:xx_xx/I:3-20@1+2&1-7|1+34/J:4_14/K:2+7-34
+7300000 10200000 sh^i-N+s=a/A:-1+2+6/B:xx-xx_xx/C:18_xx+xx/D:23+xx_xx/E:xx_xx!xx_xx-xx/F:7_3#0_xx@1_3|1_20/G:7_4%0_xx-1/H:xx_xx/I:3-20@1+2&1-7|1+34/J:4_14/K:2+7-34
+10200000 11299999 i^N-s+a=i/A:0+3+5/B:xx-xx_xx/C:18_xx+xx/D:23+xx_xx/E:xx_xx!xx_xx-xx/F:7_3#0_xx@1_3|1_20/G:7_4%0_xx-1/H:xx_xx/I:3-20@1+2&1-7|1+34/J:4_14/K:2+7-34
+11299999 12600000 N^s-a+i=b/A:0+3+5/B:xx-xx_xx/C:18_xx+xx/D:23+xx_xx/E:xx_xx!xx_xx-xx/F:7_3#0_xx@1_3|1_20/G:7_4%0_xx-1/H:xx_xx/I:3-20@1+2&1-7|1+34/J:4_14/K:2+7-34
+12600000 13400000 s^a-i+b=a/A:1+4+4/B:xx-xx_xx/C:18_xx+xx/D:23+xx_xx/E:xx_xx!xx_xx-xx/F:7_3#0_xx@1_3|1_20/G:7_4%0_xx-1/H:xx_xx/I:3-20@1+2&1-7|1+34/J:4_14/K:2+7-34
+13400000 14200000 a^i-b+a=sh/A:2+5+3/B:xx-xx_xx/C:18_xx+xx/D:23+xx_xx/E:xx_xx!xx_xx-xx/F:7_3#0_xx@1_3|1_20/G:7_4%0_xx-1/H:xx_xx/I:3-20@1+2&1-7|1+34/J:4_14/K:2+7-34
+14200000 14700000 i^b-a+sh=i/A:2+5+3/B:xx-xx_xx/C:18_xx+xx/D:23+xx_xx/E:xx_xx!xx_xx-xx/F:7_3#0_xx@1_3|1_20/G:7_4%0_xx-1/H:xx_xx/I:3-20@1+2&1-7|1+34/J:4_14/K:2+7-34
+14700000 19100000 b^a-sh+i=n/A:3+6+2/B:xx-xx_xx/C:18_xx+xx/D:23+xx_xx/E:xx_xx!xx_xx-xx/F:7_3#0_xx@1_3|1_20/G:7_4%0_xx-1/H:xx_xx/I:3-20@1+2&1-7|1+34/J:4_14/K:2+7-34
+19100000 25600000 a^sh-i+n=o/A:3+6+2/B:xx-xx_xx/C:18_xx+xx/D:23+xx_xx/E:xx_xx!xx_xx-xx/F:7_3#0_xx@1_3|1_20/G:7_4%0_xx-1/H:xx_xx/I:3-20@1+2&1-7|1+34/J:4_14/K:2+7-34
+25600000 25900000 sh^i-n+o=d/A:4+7+1/B:18-xx_xx/C:23_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:7_3#0_xx@1_3|1_20/G:7_4%0_xx-1/H:xx_xx/I:3-20@1+2&1-7|1+34/J:4_14/K:2+7-34
+25900000 26200000 i^n-o+d=o/A:4+7+1/B:18-xx_xx/C:23_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:7_3#0_xx@1_3|1_20/G:7_4%0_xx-1/H:xx_xx/I:3-20@1+2&1-7|1+34/J:4_14/K:2+7-34

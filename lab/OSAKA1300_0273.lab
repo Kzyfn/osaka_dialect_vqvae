@@ -1,0 +1,12 @@
+0 8199999 xx^xx-sil+i=y/A:xx+xx+xx/B:xx-xx_xx/C:xx_xx+xx/D:08+xx_xx/E:xx_xx!xx_xx-xx/F:xx_xx#xx_xx@xx_xx|xx_xx/G:2_2%0_xx-xx/H:xx_xx/I:xx-xx@xx+xx&xx-xx|xx+xx/J:1_2/K:2+2-6
+8199999 9000000 xx^sil-i+y=a/A:-1+1+2/B:xx-xx_xx/C:08_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:2_2#0_xx@1_1|1_2/G:4_4%0_xx-0/H:xx_xx/I:1-2@1+2&1-2|1+6/J:1_4/K:2+2-6
+9000000 9500000 sil^i-y+a=pau/A:0+2+1/B:xx-xx_xx/C:08_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:2_2#0_xx@1_1|1_2/G:4_4%0_xx-0/H:xx_xx/I:1-2@1+2&1-2|1+6/J:1_4/K:2+2-6
+9500000 11000000 i^y-a+pau=a/A:0+2+1/B:xx-xx_xx/C:08_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:2_2#0_xx@1_1|1_2/G:4_4%0_xx-0/H:xx_xx/I:1-2@1+2&1-2|1+6/J:1_4/K:2+2-6
+11000000 11700000 y^a-pau+a=k/A:xx+xx+xx/B:08-xx_xx/C:xx_xx+xx/D:02+xx_xx/E:2_2!0_xx-xx/F:xx_xx#xx_xx@xx_xx|xx_xx/G:4_4%0_xx-xx/H:1_2/I:xx-xx@xx+xx&xx-xx|xx+xx/J:1_4/K:2+2-6
+11700000 12100000 a^pau-a+k=a/A:-3+1+4/B:08-xx_xx/C:02_xx+xx/D:14+xx_xx/E:2_2!0_xx-0/F:4_4#0_xx@1_1|1_4/G:xx_xx%xx_xx-xx/H:1_2/I:1-4@2+1&2-1|3+4/J:xx_xx/K:2+2-6
+12100000 13500000 pau^a-k+a=N/A:-2+2+3/B:08-xx_xx/C:02_xx+xx/D:14+xx_xx/E:2_2!0_xx-0/F:4_4#0_xx@1_1|1_4/G:xx_xx%xx_xx-xx/H:1_2/I:1-4@2+1&2-1|3+4/J:xx_xx/K:2+2-6
+13500000 14900000 a^k-a+N=w/A:-2+2+3/B:08-xx_xx/C:02_xx+xx/D:14+xx_xx/E:2_2!0_xx-0/F:4_4#0_xx@1_1|1_4/G:xx_xx%xx_xx-xx/H:1_2/I:1-4@2+1&2-1|3+4/J:xx_xx/K:2+2-6
+14900000 15400000 k^a-N+w=a/A:-1+3+2/B:08-xx_xx/C:02_xx+xx/D:14+xx_xx/E:2_2!0_xx-0/F:4_4#0_xx@1_1|1_4/G:xx_xx%xx_xx-xx/H:1_2/I:1-4@2+1&2-1|3+4/J:xx_xx/K:2+2-6
+15400000 15800000 a^N-w+a=sil/A:0+4+1/B:02-xx_xx/C:14_xx+xx/D:xx+xx_xx/E:2_2!0_xx-0/F:4_4#0_xx@1_1|1_4/G:xx_xx%xx_xx-xx/H:1_2/I:1-4@2+1&2-1|3+4/J:xx_xx/K:2+2-6
+15800000 16900000 N^w-a+sil=xx/A:0+4+1/B:02-xx_xx/C:14_xx+xx/D:xx+xx_xx/E:2_2!0_xx-0/F:4_4#0_xx@1_1|1_4/G:xx_xx%xx_xx-xx/H:1_2/I:1-4@2+1&2-1|3+4/J:xx_xx/K:2+2-6
+16900000 17800000 w^a-sil+xx=xx/A:xx+xx+xx/B:14-xx_xx/C:xx_xx+xx/D:xx+xx_xx/E:4_4!0_xx-xx/F:xx_xx#xx_xx@xx_xx|xx_xx/G:xx_xx%xx_xx-xx/H:1_4/I:xx-xx@xx+xx&xx-xx|xx+xx/J:xx_xx/K:2+2-6

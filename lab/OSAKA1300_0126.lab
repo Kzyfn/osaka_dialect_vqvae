@@ -1,0 +1,15 @@
+0 300000 xx^xx-sil+z=e/A:xx+xx+xx/B:xx-xx_xx/C:xx_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:xx_xx#xx_xx@xx_xx|xx_xx/G:2_1%0_xx-xx/H:xx_xx/I:xx-xx@xx+xx&xx-xx|xx+xx/J:2_12/K:1+2-12
+300000 600000 xx^sil-z+e=h/A:0+1+2/B:xx-xx_xx/C:03_xx+xx/D:20+1_1/E:xx_xx!xx_xx-xx/F:2_1#0_xx@1_2|1_12/G:10_3%0_xx-1/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+600000 900000 sil^z-e+h=i/A:0+1+2/B:xx-xx_xx/C:03_xx+xx/D:20+1_1/E:xx_xx!xx_xx-xx/F:2_1#0_xx@1_2|1_12/G:10_3%0_xx-1/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+900000 10800000 z^e-h+i=g/A:1+2+1/B:xx-xx_xx/C:03_xx+xx/D:20+1_1/E:xx_xx!xx_xx-xx/F:2_1#0_xx@1_2|1_12/G:10_3%0_xx-1/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+10800000 11500000 e^h-i+g=a/A:1+2+1/B:xx-xx_xx/C:03_xx+xx/D:20+1_1/E:xx_xx!xx_xx-xx/F:2_1#0_xx@1_2|1_12/G:10_3%0_xx-1/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+11500000 13200000 h^i-g+a=N/A:-2+1+10/B:03-xx_xx/C:20_1+1/D:12+xx_xx/E:2_1!0_xx-1/F:10_3#0_xx@2_1|3_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+13200000 13500000 i^g-a+N=b/A:-2+1+10/B:03-xx_xx/C:20_1+1/D:12+xx_xx/E:2_1!0_xx-1/F:10_3#0_xx@2_1|3_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+13500000 14500000 g^a-N+b=a/A:-1+2+9/B:03-xx_xx/C:20_1+1/D:12+xx_xx/E:2_1!0_xx-1/F:10_3#0_xx@2_1|3_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+14500000 15500000 a^N-b+a=cl/A:0+3+8/B:03-xx_xx/C:20_1+1/D:12+xx_xx/E:2_1!0_xx-1/F:10_3#0_xx@2_1|3_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+15500000 16100000 N^b-a+cl=t/A:0+3+8/B:03-xx_xx/C:20_1+1/D:12+xx_xx/E:2_1!0_xx-1/F:10_3#0_xx@2_1|3_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+16100000 17100000 b^a-cl+t=e/A:1+4+7/B:03-xx_xx/C:20_1+1/D:12+xx_xx/E:2_1!0_xx-1/F:10_3#0_xx@2_1|3_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+17100000 18000000 a^cl-t+e=h/A:2+5+6/B:20-1_1/C:12_xx+xx/D:01+7_2/E:2_1!0_xx-1/F:10_3#0_xx@2_1|3_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+18000000 29800000 cl^t-e+h=o/A:2+5+6/B:20-1_1/C:12_xx+xx/D:01+7_2/E:2_1!0_xx-1/F:10_3#0_xx@2_1|3_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+29800000 30099999 t^e-h+o=sh/A:3+6+5/B:12-xx_xx/C:01_7+2/D:14+xx_xx/E:2_1!0_xx-1/F:10_3#0_xx@2_1|3_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
+30099999 30400000 e^h-o+sh=i/A:3+6+5/B:12-xx_xx/C:01_7+2/D:14+xx_xx/E:2_1!0_xx-1/F:10_3#0_xx@2_1|3_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:2-12@1+1&1-2|1+12/J:xx_xx/K:1+2-12
