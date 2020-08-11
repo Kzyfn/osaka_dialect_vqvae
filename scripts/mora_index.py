@@ -42,7 +42,7 @@ for i, filepath in tqdm(enumerate(paths)):
         1 if i in list(end_index.astype(int)) else 0
         for i in range(end_index[-1].astype(int) + 1)
     ]
-    print(np.array(mora_index).sum())
+    #print(np.array(mora_index).sum())
     indices = label.silence_frame_indices().astype(int)
 
     #indices = indices[indices < len(mora_index)]

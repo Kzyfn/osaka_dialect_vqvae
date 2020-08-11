@@ -126,7 +126,7 @@ def smooth_f0(y):
 
 
 def create_loader(valid=True, batch_size=1):
-    DATA_ROOT = "./data"
+    DATA_ROOT = "data"
     X = {"acoustic": {}}
     Y = {"acoustic": {}}
     utt_lengths = {"acoustic": {}}
@@ -184,9 +184,11 @@ def create_loader(valid=True, batch_size=1):
 
     for i, mora_i in enumerate(mora_index_lists_for_model):
         if (i - 1) % 13 == 0:  # test
-                pass
+            if not valid:
+                test_mora_index_lists.append(mora_i)
         elif i % 13 == 0:  # valid
-            test_mora_index_lists.append(mora_i)
+            if valid:
+                test_mora_index_lists.append(mora_i)
         else:
             train_mora_index_lists.append(mora_i)
 
@@ -221,6 +223,7 @@ def create_loader(valid=True, batch_size=1):
     test_mora_index_lists = [
         test_mora_index_lists[i] for i in range(len(test_mora_index_lists))
     ]
+    print(len(train_mora_index_lists), len(X_acoustic_train), len(Y_acoustic_train))
 
     train_loader = [
         [X_acoustic_train[i], Y_acoustic_train[i], train_mora_index_lists[i]]
