@@ -1,0 +1,17 @@
+0 7800000 xx^sil-k+o=r/A:-5+1+10/B:xx-xx_xx/C:04_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+7800000 8300000 sil^k-o+r=e/A:-5+1+10/B:xx-xx_xx/C:04_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+8300000 8900000 k^o-r+e=b/A:-4+2+9/B:xx-xx_xx/C:04_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+8900000 9800000 o^r-e+b=a/A:-4+2+9/B:xx-xx_xx/C:04_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+9800000 11700000 r^e-b+a=t/A:-3+3+8/B:04-xx_xx/C:02_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+11700000 12800000 e^b-a+t=a/A:-3+3+8/B:04-xx_xx/C:02_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+12800000 13400000 b^a-t+a=a/A:-2+4+7/B:04-xx_xx/C:02_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+13400000 14000000 a^t-a+a=ch/A:-2+4+7/B:04-xx_xx/C:02_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+14000000 15200000 t^a-a+ch=i/A:-1+5+6/B:04-xx_xx/C:02_xx+xx/D:02+xx_xx/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+15200000 17200000 a^a-ch+i=k/A:0+6+5/B:02-xx_xx/C:02_xx+xx/D:10+6_2/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+17200000 23700000 a^ch-i+k=i/A:0+6+5/B:02-xx_xx/C:02_xx+xx/D:10+6_2/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+23700000 29600000 ch^i-k+i=N/A:1+7+4/B:02-xx_xx/C:02_xx+xx/D:10+6_2/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+29600000 30000000 i^k-i+N=y/A:1+7+4/B:02-xx_xx/C:02_xx+xx/D:10+6_2/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+30000000 30299999 k^i-N+y=a/A:2+8+3/B:02-xx_xx/C:02_xx+xx/D:10+6_2/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+30299999 30600000 i^N-y+a=N/A:3+9+2/B:02-xx_xx/C:10_6+2/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+30600000 30900000 N^y-a+N=sil/A:3+9+2/B:02-xx_xx/C:10_6+2/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10
+30900000 31200000 y^a-N+sil=xx/A:4+10+1/B:02-xx_xx/C:10_6+2/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:10_6#0_xx@1_1|1_10/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-10@1+1&1-1|1+10/J:xx_xx/K:1+1-10

@@ -1,0 +1,12 @@
+0 9300000 xx^sil-k+I=ts/A:-5+1+7/B:xx-xx_xx/C:02_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+9300000 10200000 sil^k-I+ts=u/A:-5+1+7/B:xx-xx_xx/C:02_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+10200000 10900000 k^I-ts+u=n/A:-4+2+6/B:xx-xx_xx/C:02_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+10900000 11299999 I^ts-u+n=e/A:-4+2+6/B:xx-xx_xx/C:02_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+11299999 11700000 ts^u-n+e=ch/A:-3+3+5/B:xx-xx_xx/C:02_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+11700000 12700000 u^n-e+ch=o/A:-3+3+5/B:xx-xx_xx/C:02_xx+xx/D:03+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+12700000 13700000 n^e-ch+o=o/A:-2+4+4/B:02-xx_xx/C:03_xx+xx/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+13700000 15500000 e^ch-o+o=d/A:-2+4+4/B:02-xx_xx/C:03_xx+xx/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+15500000 18400000 ch^o-o+d=a/A:-1+5+3/B:02-xx_xx/C:03_xx+xx/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+18400000 25200000 o^o-d+a=i/A:0+6+2/B:02-xx_xx/C:03_xx+xx/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+25200000 25500000 o^d-a+i=sil/A:0+6+2/B:02-xx_xx/C:03_xx+xx/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
+25500000 25800000 d^a-i+sil=xx/A:1+7+1/B:02-xx_xx/C:03_xx+xx/D:xx+xx_xx/E:xx_xx!xx_xx-xx/F:7_6#0_xx@1_1|1_7/G:xx_xx%xx_xx-xx/H:xx_xx/I:1-7@1+1&1-1|1+7/J:xx_xx/K:1+1-7
