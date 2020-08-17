@@ -58,11 +58,14 @@ def train_vqvae(args, trial=None):
     optimizer = optim.Adam(model.parameters(), lr=1e-4)  # 1e-3
     # scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.5)
     loss_list = []
+    train_f0loss_list = []
     test_loss_list = []
     f0_loss_list = []
     start = time.time()
     for epoch in range(1, args["num_epoch"] + 1):
-        loss = train(epoch, model, train_loader, vqvae_loss, optimizer)
+        loss, train_f0_loss = train(
+            epoch, model, train_loader, vqvae_loss, optimizer, f0=True
+        )
         test_loss, f0_loss = test(epoch, model, test_loader, vqvae_loss)
 
         print(
@@ -73,6 +76,7 @@ def train_vqvae(args, trial=None):
         # scheduler.step()
         # logging
         loss_list.append(loss)
+        train_f0loss_list.append(train_f0_loss)
         test_loss_list.append(test_loss)
         f0_loss_list.append(f0_loss)
 
@@ -91,6 +95,7 @@ def train_vqvae(args, trial=None):
                 args["output_dir"] + "/vqvae_model_{}.pth".format(epoch),
             )
         np.save(args["output_dir"] + "/loss_list.npy", np.array(loss_list))
+        np.save(args["output_dir"] + "/f0loss_list.npy", np.array(train_f0_loss))
         np.save(args["output_dir"] + "/test_loss_list.npy", np.array(test_loss_list))
         np.save(args["output_dir"] + "/test_f0loss_list.npy", np.array(f0_loss_list))
 
