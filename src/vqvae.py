@@ -42,6 +42,7 @@ def train_vqvae(args, trial=None):
         print("コードブックを初期化")
         for index in tqdm(sampled_indices):
             data = train_loader[index]
+            #print(data[0].shape, data[1].shape, data[2])
             with torch.no_grad():
                 z_tmp = model.encode(
                     torch.tensor(data[0]).to(device),
@@ -50,10 +51,11 @@ def train_vqvae(args, trial=None):
                 ).view(-1, args["z_dim"])
                 z = torch.cat([z, z_tmp], dim=0).to(device)
         init_codebook = torch.from_numpy(lbg.calc_q_vec(z)).to(device)
+        print(init_codebook)
         codebook = nn.Parameter(init_codebook)
         model.init_codebook(codebook)
 
-    optimizer = optim.Adam(model.parameters(), lr=2e-4)  # 1e-3
+    optimizer = optim.Adam(model.parameters(), lr=1e-4)  # 1e-3
     # scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.5)
     loss_list = []
     test_loss_list = []
