@@ -2,7 +2,7 @@ import glob
 import os
 from os.path import expanduser, join
 
-in_dir = './lab'
+in_dir = './ojt_lab'
 out_dir = './jl_in_lab'
 
 ojt_labs = glob.glob(join(in_dir, "*.lab"))

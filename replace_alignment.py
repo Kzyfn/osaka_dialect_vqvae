@@ -2,7 +2,7 @@ import glob
 import os
 from os.path import expanduser, join
 
-jl_dir = './data/jl_out_lab' #Juliusから出力されたアラインメント済みラベルが格納してある場所
+jl_dir = './jl_out_lab' #Juliusから出力されたアラインメント済みラベルが格納してある場所
 ojt_dir = './ojt_lab' #OpenJTalkから出力されたフルコンテキストラベルが格納してある場所
 out_dir = './data/lab' #アラインメント済みフルコンテキストラベルが出力される場所
 
@@ -24,10 +24,11 @@ for s, o in zip(seg_labs, ojt_labs):
     print(s, o)
     out=''
     for itr, ol in enumerate(o_line):
-        if itr == 0 or itr == len(o_line) - 1:
-            continue
         ol = ol.split(' ')
-        sl = s_line[itr-1].split(' ')
+        try:
+            sl = s_line[itr].split(' ')
+        except:
+            print(len(s_line), len(o_line), itr)
         #時刻の表記も違う
         ol[0] = str(int(10000000*float(sl[0])))
         ol[1] = str(int(10000000*float(sl[1])))
