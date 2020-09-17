@@ -30,19 +30,19 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 def parse():
     parser = argparse.ArgumentParser(description="LSTM VAE",)
     parser.add_argument(
-        "-ne", "--num_epoch", type=int, default=30,
+        "-ne", "--num_epoch", type=int, default=80,
     )
     parser.add_argument(
         "-nl", "--num_layers", type=int, default=2,
     )
     parser.add_argument(
-        "-zd", "--z_dim", type=int, default=8,
+        "-zd", "--z_dim", type=int, default=1,
     )
     parser.add_argument("-od", "--output_dir", type=str, required=True,),
     parser.add_argument("-dr", "--dropout_ratio", type=float, default=0.3,),
     parser.add_argument("-mp", "--model_path", type=str, default="",),
     parser.add_argument("-tr", "--train_ratio", type=float, default=1.0),
-    parser.add_argument("-nc", "--num_class", type=int, default=2),
+    parser.add_argument("-nc", "--num_class", type=int, default=4),
     parser.add_argument("-q", "--quantized", type=bool, default=False),
     parser.add_argument("-nt", "--num_trials", type=int, default=30)
 
@@ -124,6 +124,9 @@ def smooth_f0(y):
     ).reshape(-1)
     return ans
 
+def replace_last_mora_i(length, mora_i):
+    mora_i[-1]=length-1
+    return mora_i
 
 def create_loader(valid=True, batch_size=1):
     DATA_ROOT = "data"
@@ -226,12 +229,12 @@ def create_loader(valid=True, batch_size=1):
     print(len(train_mora_index_lists), len(X_acoustic_train), len(Y_acoustic_train))
 
     train_loader = [
-        [X_acoustic_train[i], Y_acoustic_train[i], train_mora_index_lists[i]]
-        for i in range(len(train_mora_index_lists))
+        [X_acoustic_train[i], Y_acoustic_train[i], replace_last_mora_i(X_acoustic_train[i].shape[0], train_mora_index_lists[i])]
+        for i in range(len(X_acoustic_train))
     ]
     test_loader = [
-        [X_acoustic_test[i], Y_acoustic_test[i], test_mora_index_lists[i]]
-        for i in range(len(test_mora_index_lists))
+        [X_acoustic_test[i], Y_acoustic_test[i], replace_last_mora_i(X_acoustic_test[i].shape[0], test_mora_index_lists[i])]
+        for i in range(len(X_acoustic_test))
     ]
 
     return train_loader, test_loader
