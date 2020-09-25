@@ -20,15 +20,26 @@ def train_vqvae(args, trial=None):
     """
     """
     model = VQVAE(
-        num_layers=args["num_layers"], z_dim=args["z_dim"], num_class=args["num_class"]
+        num_layers=args["num_layers"], z_dim=args["z_dim"], num_class=args["num_class"], input_linguistic_dim = 289#+2
     ).to(device)
 
     train_loader, test_loader = create_loader()
+    train_loader_tokyo, _ = create_loader(tokyo=True)
+    train_loader_tokyo = train_loader_tokyo[:3000]
+
+    train_loader = np.concatenate([train_loader, train_loader_tokyo])
+
     train_num = int(args["train_ratio"] * len(train_loader))  # 1
     train_loader = train_loader[:train_num]
 
-    if args["model_path"] != "":
-        model.load_state_dict(torch.load(args["model_path"]))
+    for i in range(len(train_loader)):
+        train_loader[i][0] = np.concatenate((train_loader[i][0][:, :285], train_loader[i][0][:, -4:]), axis=1)#, np.ones((train_loader[i][0].shape[0], 1)), np.zeros((train_loader[i][0].shape[0], 1))), axis=1).astype('float64') if i < 1100 else np.concatenate((train_loader[i][0][:, :285], train_loader[i][0][:, -4:], np.zeros((train_loader[i][0].shape[0], 1)), np.ones((train_loader[i][0].shape[0], 1))), axis=1).astype('float64')
+    for i in range(len(test_loader)):
+        test_loader[i][0] = np.concatenate((test_loader[i][0][:, :285], test_loader[i][0][:, -4:]), axis=1)#, np.zeros((test_loader[i][0].shape[0], 1)), np.ones((test_loader[i][0].shape[0], 1))), axis=1).astype('float64')
+    
+    np.random.shuffle(train_loader)
+    if True:#args["model_path"] != "":
+        model.load_state_dict(torch.load('./0923_tokyo_2200included_lr_5e-5/vqvae_model_35.pth'))#args["model_path"]))
 
     else:
         lbg = LBG(num_class=args["num_class"], z_dim=args["z_dim"])
@@ -45,8 +56,8 @@ def train_vqvae(args, trial=None):
             #print(data[0].shape, data[1].shape, data[2])
             with torch.no_grad():
                 z_tmp = model.encode(
-                    torch.tensor(data[0]).to(device),
-                    torch.tensor(data[1]).to(device),
+                    torch.tensor(data[0]).float().to(device),
+                    torch.tensor(data[1]).float().to(device),
                     data[2],
                 ).view(-1, args["z_dim"])
                 z = torch.cat([z, z_tmp], dim=0).to(device)
@@ -55,7 +66,7 @@ def train_vqvae(args, trial=None):
         codebook = nn.Parameter(init_codebook)
         model.init_codebook(codebook)
 
-    optimizer = optim.Adam(model.parameters(), lr=1e-4)  # 1e-3
+    optimizer = optim.Adam(model.parameters(), lr=5e-6)  # 1e-3
     # scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.5)
     loss_list = []
     train_f0loss_list = []
@@ -92,7 +103,7 @@ def train_vqvae(args, trial=None):
         if epoch % 5 == 0:
             torch.save(
                 model.state_dict(),
-                args["output_dir"] + "/vqvae_model_{}.pth".format(epoch),
+                args["output_dir"] + "/vqvae_model_{}.pth".format(epoch+30),
             )
         np.save(args["output_dir"] + "/loss_list.npy", np.array(loss_list))
         np.save(args["output_dir"] + "/f0loss_list.npy", np.array(train_f0loss_list))

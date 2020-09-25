@@ -128,8 +128,8 @@ def replace_last_mora_i(length, mora_i):
     mora_i[-1]=length-1
     return mora_i
 
-def create_loader(valid=True, batch_size=1):
-    DATA_ROOT = "data"
+def create_loader(valid=True, batch_size=1, tokyo=False):
+    DATA_ROOT = "data" if not tokyo else '../asj_vae_tutorial/data/basic5000'
     X = {"acoustic": {}}
     Y = {"acoustic": {}}
     utt_lengths = {"acoustic": {}}
@@ -142,12 +142,12 @@ def create_loader(valid=True, batch_size=1):
             y_dim = duration_dim if ty == "duration" else acoustic_dim
             X[ty][phase] = FileSourceDataset(
                 BinaryFileSource(
-                    join(DATA_ROOT, "X_{}".format(ty)), dim=x_dim, train=train, valid=valid
+                    join(DATA_ROOT, "X_{}".format(ty)), dim=x_dim, train=train, valid=valid, tokyo=tokyo
                 )
             )
             Y[ty][phase] = FileSourceDataset(
                 BinaryFileSource(
-                    join(DATA_ROOT, "Y_{}".format(ty)), dim=y_dim, train=train, valid=valid
+                    join(DATA_ROOT, "Y_{}".format(ty)), dim=y_dim, train=train, valid=valid, tokyo=tokyo
                 )
             )
             utt_lengths[ty][phase] = np.array(
@@ -177,7 +177,7 @@ def create_loader(valid=True, batch_size=1):
         }
     ).to_csv('data/y_stats.csv')
 
-    mora_index_lists = sorted(glob(join("data/mora_index", "squeezed_*.csv")))
+    mora_index_lists = sorted(glob(join("data/mora_index", "squeezed_*.csv"))) if not tokyo else sorted(glob(join(DATA_ROOT, "mora_index/squeezed_*.csv")))
     mora_index_lists_for_model = [
         np.loadtxt(path).reshape(-1) for path in mora_index_lists
     ]
@@ -185,15 +185,27 @@ def create_loader(valid=True, batch_size=1):
     train_mora_index_lists = []
     test_mora_index_lists = []
 
-    for i, mora_i in enumerate(mora_index_lists_for_model):
-        if (i - 1) % 13 == 0:  # test
-            if not valid:
-                test_mora_index_lists.append(mora_i)
-        elif i % 13 == 0:  # valid
-            if valid:
-                test_mora_index_lists.append(mora_i)
-        else:
-            train_mora_index_lists.append(mora_i)
+    if not tokyo:
+
+        for i, mora_i in enumerate(mora_index_lists_for_model):
+            if (i - 1) % 13 == 0:  # test
+                if not valid:
+                    test_mora_index_lists.append(mora_i)
+            elif i % 13 == 0:  # valid
+                if valid:
+                    test_mora_index_lists.append(mora_i)
+            else:
+                train_mora_index_lists.append(mora_i)
+    else:
+        for i, mora_i in enumerate(mora_index_lists_for_model):
+            if (i - 1) % 25 == 0:  # test
+                if not valid:
+                    test_mora_index_lists.append(mora_i)
+            elif i % 25 == 0:  # valid
+                if valid:
+                    test_mora_index_lists.append(mora_i)
+            else:
+                train_mora_index_lists.append(mora_i)
 
     X_acoustic_train = [
         minmax_scale(

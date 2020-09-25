@@ -128,7 +128,7 @@ class VAE(nn.Module):
 
 class VQVAE(nn.Module):
     def __init__(
-        self, bidirectional=True, num_layers=2, num_class=2, z_dim=1, dropout=0.15
+        self, bidirectional=True, num_layers=2, num_class=2, z_dim=1, dropout=0.15, input_linguistic_dim=acoustic_linguisic_dim
     ):
         super(VQVAE, self).__init__()
         self.num_layers = num_layers
@@ -145,10 +145,10 @@ class VQVAE(nn.Module):
         self.z_dim = z_dim
 
         self.fc11 = nn.Linear(
-            acoustic_linguisic_dim + acoustic_dim, acoustic_linguisic_dim + acoustic_dim
+            input_linguistic_dim + acoustic_dim, input_linguistic_dim + acoustic_dim
         )
         self.lstm1 = nn.LSTM(
-            acoustic_linguisic_dim + acoustic_dim,
+            input_linguistic_dim + acoustic_dim,
             hidden_num,
             num_layers,
             bidirectional=bidirectional,
@@ -158,10 +158,10 @@ class VQVAE(nn.Module):
         ##ここまでエンコーダ
 
         self.fc12 = nn.Linear(
-            acoustic_linguisic_dim + z_dim * 93, acoustic_linguisic_dim + z_dim * 93
+            input_linguistic_dim + z_dim, input_linguistic_dim + z_dim
         )
         self.lstm2 = nn.LSTM(
-            acoustic_linguisic_dim + z_dim * 93,
+            input_linguistic_dim + z_dim,
             hidden_num,
             num_layers,
             bidirectional=bidirectional,
@@ -219,7 +219,7 @@ class VQVAE(nn.Module):
         x = torch.cat(
             [
                 linguistic_features,
-                z_tmp.view(-1, self.z_dim).repeat_interleave(93, dim=1),
+                z_tmp.view(-1, self.z_dim),
             ],
             dim=1,
         )
@@ -276,11 +276,12 @@ class Rnn(nn.Module):
 
 
 class BinaryFileSource(FileDataSource):
-    def __init__(self, data_root, dim, train, valid=True):
+    def __init__(self, data_root, dim, train, valid=True, tokyo=False):
         self.data_root = data_root
         self.dim = dim
         self.train = train
         self.valid = valid
+        self.tokyo = tokyo
 
     def collect_files(self):
         files = sorted(glob(join(self.data_root, "*.bin")))
@@ -288,12 +289,16 @@ class BinaryFileSource(FileDataSource):
         train_files = []
         test_files = []
         # train_files, test_files = train_test_split(files, test_size=test_size, random_state=random_state)
+        if self.tokyo:
+            group_num = 25
+        else:
+            group_num=13
 
         for i, path in enumerate(files):
-            if (i - 1) % 13 == 0:  # test
+            if (i - 1) % group_num == 0:  # test
                 if not self.valid:
                     test_files.append(path)
-            elif i % 13== 0:  # valid
+            elif i % group_num == 0:  # valid
                 if self.valid:
                     test_files.append(path)
             else:
