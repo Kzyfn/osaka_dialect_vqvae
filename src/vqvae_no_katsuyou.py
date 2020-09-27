@@ -20,7 +20,7 @@ def train_vqvae(args, trial=None):
     """
     """
     model = VQVAE(
-        num_layers=args["num_layers"], z_dim=args["z_dim"], num_class=args["num_class"], input_linguistic_dim = 289#+2
+        num_layers=args["num_layers"], z_dim=args["z_dim"], num_class=args["num_class"], input_linguistic_dim = 289+2
     ).to(device)
 
     train_loader, test_loader = create_loader()
@@ -33,13 +33,13 @@ def train_vqvae(args, trial=None):
     train_loader = train_loader[:train_num]
 
     for i in range(len(train_loader)):
-        train_loader[i][0] = np.concatenate((train_loader[i][0][:, :285], train_loader[i][0][:, -4:]), axis=1)#, np.ones((train_loader[i][0].shape[0], 1)), np.zeros((train_loader[i][0].shape[0], 1))), axis=1).astype('float64') if i < 1100 else np.concatenate((train_loader[i][0][:, :285], train_loader[i][0][:, -4:], np.zeros((train_loader[i][0].shape[0], 1)), np.ones((train_loader[i][0].shape[0], 1))), axis=1).astype('float64')
+        train_loader[i][0] = np.concatenate((train_loader[i][0][:, :285], train_loader[i][0][:, -4:], np.ones((train_loader[i][0].shape[0], 1)), np.zeros((train_loader[i][0].shape[0], 1))), axis=1).astype('float64') if i < 1100 else np.concatenate((train_loader[i][0][:, :285], train_loader[i][0][:, -4:], np.zeros((train_loader[i][0].shape[0], 1)), np.ones((train_loader[i][0].shape[0], 1))), axis=1).astype('float64')
     for i in range(len(test_loader)):
-        test_loader[i][0] = np.concatenate((test_loader[i][0][:, :285], test_loader[i][0][:, -4:]), axis=1)#, np.zeros((test_loader[i][0].shape[0], 1)), np.ones((test_loader[i][0].shape[0], 1))), axis=1).astype('float64')
+        test_loader[i][0] = np.concatenate((test_loader[i][0][:, :285], test_loader[i][0][:, -4:], np.ones((test_loader[i][0].shape[0], 1)), np.zeros((test_loader[i][0].shape[0], 1))), axis=1).astype('float64')
     
     np.random.shuffle(train_loader)
-    if True:#args["model_path"] != "":
-        model.load_state_dict(torch.load('./0923_tokyo_2200included_lr_5e-5/vqvae_model_35.pth'))#args["model_path"]))
+    if args["model_path"] != "":
+        model.load_state_dict(torch.load(args["model_path"]))
 
     else:
         lbg = LBG(num_class=args["num_class"], z_dim=args["z_dim"])
@@ -66,7 +66,7 @@ def train_vqvae(args, trial=None):
         codebook = nn.Parameter(init_codebook)
         model.init_codebook(codebook)
 
-    optimizer = optim.Adam(model.parameters(), lr=5e-6)  # 1e-3
+    optimizer = optim.Adam(model.parameters(), lr=5e-5)  # 1e-3
     # scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=3, gamma=0.5)
     loss_list = []
     train_f0loss_list = []
